@@ -10,9 +10,12 @@ export const styles = StyleSheet.create({
   },
   front: {
     backgroundColor: "#DAE1E7",
+    backfaceVisibility: "hidden",
+    position: "absolute"
   },
   back: {
-    backgroundColor: "#BAC1C7",
+      backgroundColor: "#BAC1C7",
+      backfaceVisibility: "hidden"
   },
   circle: {
     width: 24,

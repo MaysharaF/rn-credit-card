@@ -1,4 +1,4 @@
-import { SafeAreaView, TouchableOpacity, View } from "react-native";
+import { Pressable, SafeAreaView, View } from "react-native";
 import { useSharedValue } from "react-native-reanimated";
 
 import { CARD_SIDE, CreditCard } from "@/components/credit-card";
@@ -26,11 +26,11 @@ export function Payment() {
 
   return (
     <SafeAreaView>
-      <TouchableOpacity>
+      <Pressable onPress={handleFlipCard}>
         <View style={styles.container}>
           <CreditCard cardSide={cardSide} />
         </View>
-      </TouchableOpacity>
+      </Pressable>
     </SafeAreaView>
   );
 }
